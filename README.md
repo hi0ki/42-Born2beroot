@@ -87,7 +87,7 @@ ssh username@localhost -p 4242
 
 **Install library for password quality**
 ```bash
-sudo apt install libpwquality
+sudo apt install libpam-pwquality
 ```
 
 **Open the password configuration file*
