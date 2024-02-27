@@ -77,6 +77,7 @@ sudo ufw allow 4242
 ```bash
 sudo ufw delete allow 4242
 ```
+<img width="1277" alt="Screen Shot 2024-02-27 at 9 07 56 PM" src="https://github.com/hi0ki/Born2beroot/assets/123004073/8898de34-fcff-467e-8b62-280091b9deb0">
 
 **Now u can connect with ssh**
 ```bash
