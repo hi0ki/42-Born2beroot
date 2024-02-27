@@ -78,7 +78,7 @@ sudo ufw allow 4242
 sudo ufw delete allow 4242
 ```
 
-**Now u can connect with ssh **
+**Now u can connect with ssh**
 ```bash
 ssh username@localhost -p 4242
 ```
