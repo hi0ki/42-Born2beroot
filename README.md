@@ -127,7 +127,7 @@ PASS_WARN_AGE 7
 ```bash
 PASS_MAX_DAYS 30 
 ```
-** Minimum modification interval to 2 days**
+**Minimum modification interval to 2 days.**
 ```bash
 PASS_MIN_DAYS 2
 ```
@@ -135,7 +135,19 @@ PASS_MIN_DAYS 2
 ```bash
 PASS_WARN_AGE 7
 ```
+**You can use this cmd to desplay password expiration information**
+```bash
+chage -l <username>
+```
+**YOU can change information with chage with flag**
+```bash
+example: change mindays to 2days for user
+chage -m 2 <username>
 
+flags:
+-M > for maxdays
+-W > for warning days
+```
 ## Config Sudo 
 
 **Go to root**
