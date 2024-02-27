@@ -90,7 +90,7 @@ ssh username@localhost -p 4242
 sudo apt install libpam-pwquality
 ```
 
-**Open the password configuration file*
+**Open the password configuration file**
 
 ```bash
 vim /etc/pam.d/common-password
