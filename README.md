@@ -227,3 +227,80 @@ getent password
 ```bash
 getent group
 ```
+# Bonus Part
+
+**Install packages**
+```bash
+sudo apt install lighttpd
+
+sudo apt install mariadb-server
+
+sudo apt install php-cgi
+
+sudo lighttpd-enable-mod fastcgi
+```
+
+**Config lighttpd**
+```bash
+sudo vim /etc/lighttpd/lighttpd.conf
+```
+
+```bash
+fastcgi.server += ( ".php" => (( "bin-path" => "/usr/bin/php-cgi", "socket" => "/tmp/php.socket" )))
+```
+```bash
+sudo service lighttpd status
+```
+```bash
+sudo service lighttpd force-reload
+```
+**Config database**
+```bash
+mariadb 
+```
+```bash
+CREATE DATABASE wordpress;
+```
+```bash
+CREATE USER 'your_username'@'localhost' IDENTIFIED BY 'your_password';
+```
+```bash
+GRANT ALL PRIVILEGES ON your_database_name.* TO 'your_username'@'localhost';
+```
+```bash
+exit
+```
+
+**Config wordpress**
+
+```bash
+su -
+```
+```bash
+cd /var/www/html
+```
+```bash
+wget https://wordpress.org/latest.tar.gz
+```
+```bash
+tar -xzvf latest.tar.gz
+```
+```bash
+mv wordpress/*  .
+```
+```bash
+cp wp-config-sample.php wp-config.php
+```
+```bash
+vim wp-config.php
+```
+```bash
+and change 
+            'database_name_here'
+            'username_here'
+            'password_here'
+```
+**Open Port 80 for lighttpd server**
+```bash
+ufw allow 80
+```
