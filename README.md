@@ -4,7 +4,7 @@
 
 ## Install Sudo
 
-**Go to root**
+**Switch to root**
 ```bash
 su -
 ```
@@ -155,7 +155,7 @@ flags:
 ```
 ## Config Sudo 
 
-**Go to root**
+**Switch to root**
 ```bash
 su -
 ```
@@ -190,7 +190,7 @@ Defaults        requiretty
 
 ## Add user & Add group & change hostname ... 
 
-**Go to root**
+**Switch to root**
 ```bash
 su -
 ```
@@ -212,7 +212,7 @@ deluser <username>
 ```bash
 groupadd <grpname>
 ```
-**Add a user to the group*
+**Add a user to the group**
 ```bash
 usermod -aG <grpname> <username>
 ```
