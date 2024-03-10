@@ -304,3 +304,8 @@ and change
 ```bash
 ufw allow 80
 ```
+```bash
+sudo service lighttpd restart
+```
+**http://127.0.0.1/**
+### END
