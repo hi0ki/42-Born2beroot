@@ -1,7 +1,6 @@
 # Born2beroot
 
-## About Born2beroot
-
+### About Born2beroot
 Born2beroot is a system administration project at 42 School that focuses on creating and configuring a virtual machine (VM) using a Linux distribution. The primary objectives of this project include:
 
 - Learning system administration fundamentals
@@ -14,6 +13,7 @@ Born2beroot is a system administration project at 42 School that focuses on crea
 - Setting up SSH and sudo configurations
 
 The project challenges students to manually install and configure a Linux server environment, emphasizing manual configuration over automated tools like Docker or pre-configured images. Students typically create a VM with strict security settings, configure various system services, and demonstrate their understanding of Linux system administration principles.
+
 
 > ~~ **ALL YOU NEED TO CREATE YOUR VM & GL HF**~~
 
